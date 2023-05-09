@@ -1,9 +1,9 @@
-import { StackContext, NextjsSite } from "sst/constructs";
+import { StackContext, NextjsSite, StaticSite } from "sst/constructs";
+
 
 export function FrontendStack({ stack }: StackContext) {
-  const site = new NextjsSite(stack, "Site", {
-  buildCommand: "npm run build",
-    path: "frontend/",
+  const site = new StaticSite(stack, "Site", {
+  path: "frontend/",
   });
   stack.addOutputs({
     siteURL: site.url,
