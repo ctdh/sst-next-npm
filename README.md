@@ -122,6 +122,7 @@ Deselect auto deploy for Dev
 Select auto deploy on branch Main for Prod
 
 ```bash
+git add .
 git commit -m "Initial deploy"
 git push
 ```
