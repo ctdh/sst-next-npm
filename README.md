@@ -126,3 +126,29 @@ git add .
 git commit -m "Initial deploy"
 git push
 ```
+
+Seed build error:
+> frontend@0.1.0 build
+> next build
+sh: 1: next: not found
+2023-05-09T08:52:41.396Z  +4592ms [debug] {}
+Error: There was a problem building the "Site" StaticSite.
+Trace: Error: There was a problem building the "Site" StaticSite.
+    at NextjsSite.runBuild (file:///tmp/seed/source/node_modules/sst/constructs/SsrSite.js:277:19)
+    at NextjsSite.buildApp (file:///tmp/seed/source/node_modules/sst/constructs/SsrSite.js:239:18)
+    at new SsrSite (file:///tmp/seed/source/node_modules/sst/constructs/SsrSite.js:83:14)
+    at new NextjsSite (file:///tmp/seed/source/node_modules/sst/constructs/NextjsSite.js:28:9)
+    at EmptyStack.FrontendStack (/tmp/seed/source/stacks/FrontendStack.ts:4:16)
+    at stack (file:///tmp/seed/source/node_modules/sst/constructs/FunctionalStack.js:20:35)
+    at App.stack (file:///tmp/seed/source/node_modules/sst/constructs/App.js:465:16)
+    at Object.stacks (/tmp/seed/source/sst.config.ts:15:6)
+    at Module.synth (file:///tmp/seed/source/node_modules/sst/stacks/synth.js:54:20)
+    at async Object.handler (file:///tmp/seed/source/node_modules/sst/cli/commands/build.js:9:20)
+    at process.<anonymous> (file:///tmp/seed/source/node_modules/sst/cli/sst.js:58:17)
+    at process.emit (node:events:539:35)
+    at process.emit (node:domain:475:12)
+    at process._fatalException (node:internal/process/execution:167:25)
+    at processPromiseRejections (node:internal/process/promises:279:13)
+    at processTicksAndRejections (node:internal/process/task_queues:97:32)
+Need help with this error? Join the SST community on Discord https://sst.dev/discord
+ERROR: Trace: Error: There was a problem building the "Site" StaticSite.
