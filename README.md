@@ -152,3 +152,55 @@ Trace: Error: There was a problem building the "Site" StaticSite.
     at processTicksAndRejections (node:internal/process/task_queues:97:32)
 Need help with this error? Join the SST community on Discord https://sst.dev/discord
 ERROR: Trace: Error: There was a problem building the "Site" StaticSite.
+
+Installed open-nextjs
+  
+  ```bash
+  cd frontend 
+  npx open-next@latest build
+  npx open-next@latest build 
+Need to install the following packages:
+  open-next@1.2.1
+Ok to proceed? (y) y
+Using v1.2.1
+┌─────────────────────────────────┐
+│ OpenNext — Building Next.js app │
+└─────────────────────────────────┘
+> frontend@0.1.0 build
+> next build
+
+- warn Detected next.config.js, no exported configuration found. https://nextjs.org/docs/messages/empty-configuration
+- info Creating an optimized production build  
+- info Compiled successfully
+- info Linting and checking validity of types  
+- info Collecting page data
+- info Generating static pages (4/4)
+- info Finalizing page optimization  
+
+Route (app)                                Size     First Load JS
+┌ ○ /                                      4.76 kB        81.6 kB
+└ ○ /favicon.ico                           0 B                0 B
++ First Load JS shared by all              76.8 kB
+  ├ chunks/139-ecdfc5cea483cfbb.js         24.4 kB
+  ├ chunks/2443530c-9d09dde9f906fe30.js    50.5 kB
+  ├ chunks/main-app-d539feb156a9d62b.js    212 B
+  └ chunks/webpack-13cb6a530b2d87f9.js     1.64 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   178 B          85.9 kB
++ First Load JS shared by all              85.8 kB
+  ├ chunks/main-7f876d10159003c2.js        83.9 kB
+  ├ chunks/pages/_app-c544d6df833bfd4a.js  192 B
+  └ chunks/webpack-13cb6a530b2d87f9.js     1.64 kB
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+┌──────────────────────────────┐
+│ OpenNext — Generating bundle │
+└──────────────────────────────┘
+
+Bundling server function...
+Bundling image optimization function...
+Bundling assets..
+```
