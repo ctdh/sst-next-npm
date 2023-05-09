@@ -112,3 +112,16 @@ git branch -M main
 git remote add origin <URL>
 git push -u origin main
 ```
+
+Create new porject in Seed.io
+Link to github
+Connect to ctdh/sst-next-npm repo
+Add default service
+Add aws credentials
+Deselect auto deploy for Dev
+Select auto deploy on branch Main for Prod
+
+```bash
+git commit -m "Initial deploy"
+git push
+```
