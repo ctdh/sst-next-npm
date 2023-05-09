@@ -1,11 +1,11 @@
 import { StackContext, NextjsSite, StaticSite } from "sst/constructs";
 
 
-export function FrontendStack({ stack }: StackContext) {
+export function FrontendStack({ stack, app }: StackContext) {
   const site = new StaticSite(stack, "Site", {
   path: "frontend",
   customDomain: {
-    domainName: "next.pathwayanalytics.com",
+    domainName: `${app.stage}-next.pathwayanalytics.com`,
     hostedZone: "pathwayanalytics.com",
   },
   });
